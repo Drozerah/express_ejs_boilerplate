@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("./partials/_favicon.ejs") %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- isDevCSSStyles() %> 
+  <link rel="stylesheet" href="css/styles.css">
+  <title><%= app_title %></title>
+</head>
+<body>
+  <% if (isDevelopmentProcess()) { %>
+    <%- include('./dev_partials/_dev.ejs') %>
+  <% } %>
+  <%- include("./partials/_header.ejs") %>
+  <main>
+    <article>
+      <header>
+        <h1><%= page_title %></h1>
+      </header>
+      <div>
+        <p><%= page_content_txt %> </p>
+      </div>
+    </article>
+  </main>
+  <%- include("./partials/_footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.dev-bloc{
+  color: white;
+  padding: 5px;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+.dev-bloc a{
+  color: orangered;
+  text-decoration: none;
+}
+body{
+  margin-top: 80px;
+}

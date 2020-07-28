@@ -1,0 +1,34 @@
+{
+  "name": "express-ejs-app",
+  "version": "0.0.1",
+  "description": "Express Web Application Boilerplate with EJS template engine",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development nodemon server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "lint:ejs": "ejslint views/*.ejs"
+  },
+  "keywords": [],
+  "author": "Thomas G. aka Drozerah <drozerah@gmail.com> (https://github.com/Drozerah)",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-lint": "^1.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "express-routes-visualizer": "git+https://github.com/Drozerah/express-routes-visualizer.git",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "express_ejs_boilerplate.git"
+  }
+}
