@@ -16,7 +16,6 @@ app.set('views', path.join(__dirname, '/views'))
 require('./helpers/ejs_helpers')(app)
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.static(path.join(__dirname, 'dev')))
 
 /**
  * Routes
@@ -39,6 +38,9 @@ app.get('/about', (req, res) => {
 
 // development only
 if (app.get('env') === 'development') {
+  // static path
+  app.use(express.static(path.join(__dirname, 'dev')))
+  // routes visualizer middleware
   const { middleware, visualizer } = require('express-routes-visualizer')
   app.use('/routes', middleware({ httpMethods: true }), visualizer({ theme: 'plain' }))
 }
