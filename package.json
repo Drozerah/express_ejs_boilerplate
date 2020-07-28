@@ -1,6 +1,6 @@
 {
   "name": "express-ejs-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Express Web Application Boilerplate with EJS template engine",
   "main": "server.js",
   "scripts": {

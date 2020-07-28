@@ -1,4 +1,7 @@
-<div class="dev-bloc">
+<div id="app_info">
   <div>[APP][Mode][<%- app_env %>][<%- app_version %>]</div>
   <div>[APP][Routes][<a href="/routes" target="_blank" rel="noreferrer noopener">visualizer</a>]</div>
 </div>
+<script>
+  document.querySelector('body').style.marginTop = `${document.getElementById('app_info').offsetHeight + 25}px`
+</script>

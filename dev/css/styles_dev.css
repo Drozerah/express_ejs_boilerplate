@@ -1,16 +1,17 @@
-.dev-bloc{
-  color: white;
+#app_info{
+  color: #d69a5e;
   padding: 5px;
-  background-color: #333;
+  background-color: #35363a;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
+  padding: 10px 10px;
 }
-.dev-bloc a{
+#app_info a{
   color: orangered;
   text-decoration: none;
 }
-body{
-  margin-top: 80px;
+#app_info a:hover{
+  text-decoration: underline;
 }
